@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="fade-in fade-out">
+				<h2>React Hooks</h2>
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h4 style="font-size: 32px; margin-bottom: 20px;">Functional Component &nbsp vs &nbsp Class Component</h4>
+				<img src="./assets/components.png" alt="React components examples">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h3 style="font-size: 44px;">The main purpose of React Hooks is:</h3>
+				<p>to give functions the ability to manage and share state, effects and much more, increasing the potential
+					for extensibility and improving performance</p>
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h3 style="font-size: 48px; margin-bottom: 40px;">Rules of React Hooks</h3>
+				<p>- only call Hooks at the top level</p>
+				<p>- only call Hooks from React functions</p>
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h3 style="font-size: 48px; margin-bottom: 40px;">Why are React Hooks useful?</h3>
+				<p class="fragment" data-fragment-index="0">- easier to test</p>
+				<p class="fragment" data-fragment-index="1">- easier to read</p>
+				<p class="fragment" data-fragment-index="2">- closer to traditional JavaScript</p>
+				<p class="fragment" data-fragment-index="3">- less code-intensive</p>
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h3 style="font-size: 44px; margin-bottom: 40px;">The most commonly used React Hooks</h3>
+				<p class="fragment" data-fragment-index="0" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useState</strong> - for managing states</p>
+				<p class="fragment" data-fragment-index="1" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useEffect</strong> - for managing
+					side-effects
+					like API calls,
+					subscriptions, timers, mutations and more</p>
+				<p class="fragment" data-fragment-index="2" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useContext</strong> - to return
+					the current value
+					for a context</p>
+				<p class="fragment" data-fragment-index="3" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useReducer</strong> - useState
+					alternative to help
+					with complex state
+					management</p>
+				<p class="fragment" data-fragment-index="4" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useCallback</strong> - to return
+					a memorized
+					version of a callback to help
+					a child component not re-render unnecessarily</p>
+				<p class="fragment" data-fragment-index="5" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useMemo</strong> - to return a
+					memorized value
+					that helps in performance
+					optimizations</p>
+				<p class="fragment" data-fragment-index="6" style="font-size: 26px;">- <strong
+						style="color: #cc3333;">useRef</strong> - to return a ref
+					object with a
+					'current' property, which
+					is mainly used to access a child component imperatively</p>
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useState Hook</p>
+				<img style="width: 60%;" src="./assets/useState.jpg" alt="useState hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useContext Hook</p>
+				<img style="width: 70%;" src="./assets/useContext.jpg" alt="useContext hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useEffect Hook</p>
+				<img style="width: 60%;" src="./assets/useEffect.jpg" alt="useEffect hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useReducer Hook</p>
+				<img style="width: 70%;" src="./assets/useReducer.jpg" alt="useReducer hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useCallback Hook</p>
+				<img style="width: 70%;" src="./assets/useCallback.jpg" alt="useCallback hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useMemo Hook</p>
+				<img style="width: 70%;" src="./assets/useMemo.jpg" alt="useMemo hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">The useRef Hook</p>
+				<img style="width: 70%;" src="./assets/useRef.jpg" alt="useRef hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<p style="font-size: 60px; font-weight: 600;">Сustom React Hook</p>
+				<img src="./assets/custom_hook.png" alt="custom hook">
+			</section>
+			<section data-transition="fade-in fade-out">
+				<h3>Thank you <br> for your attention!</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
